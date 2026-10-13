@@ -1,0 +1,364 @@
+/* ==============================================
+   PRI AUTOCOMPLETE SELECT - STYLES
+   ============================================== */
+
+.pri-autocomplete-wrapper {
+  position: relative;
+  width: auto;
+}
+
+.pri-autocomplete-wrapper.full-width {
+  width: 100%;
+}
+
+/* ==============================================
+   SIZES
+   ============================================== */
+
+.pri-autocomplete-small .MuiAutocomplete-input {
+  font-size: 0.8rem !important;
+  padding: 4px 100px 4px 12px !important; /* More right padding for icons */
+}
+
+.pri-autocomplete-medium .MuiAutocomplete-input {
+  font-size: 0.875rem !important;
+  padding: 8px 100px 8px 14px !important;
+}
+
+.pri-autocomplete-large .MuiAutocomplete-input {
+  font-size: 1rem !important;
+  padding: 10px 110px 10px 16px !important;
+}
+
+/* ==============================================
+   AUTOCOMPLETE ROOT
+   ============================================== */
+
+.pri-autocomplete {
+  width: 100% !important;
+}
+
+.pri-autocomplete .MuiAutocomplete-root {
+  width: 100% !important;
+}
+
+.pri-autocomplete .MuiFormControl-root {
+  width: 100% !important;
+  margin: 0 !important;
+}
+
+.pri-autocomplete .MuiInputLabel-root {
+  display: none !important;
+}
+
+.pri-autocomplete .MuiInputBase-root {
+  padding: 0 !important;
+  background-color: transparent !important;
+}
+
+.pri-autocomplete .MuiOutlinedInput-notchedOutline {
+  border: none !important;
+}
+
+/* 🔥 Hide default MUI popup indicator (arrow) */
+.pri-autocomplete .MuiAutocomplete-popupIndicator {
+  display: none !important;
+}
+
+/* 🔥 Hide default clear indicator */
+.pri-autocomplete .MuiAutocomplete-clearIndicator {
+  display: none !important;
+}
+
+.pri-autocomplete .MuiAutocomplete-inputRoot {
+  padding-right: 0px !important;
+}
+
+/* ==============================================
+   INPUT STYLES
+   ============================================== */
+
+.pri-autocomplete .MuiAutocomplete-input {
+  font-family: 'Inter', 'Plus Jakarta Sans', sans-serif !important;
+  color: #1e293b !important;
+  background-color: #ffffff !important;
+  border: 1.5px solid #084bb0 !important;
+  border-radius: 12px !important;
+  transition: all 0.2s ease !important;
+  cursor: pointer !important;
+  width: 100% !important;
+}
+
+.pri-autocomplete .MuiAutocomplete-input:hover {
+  border-color: #1e293b !important;
+}
+
+.pri-autocomplete .MuiAutocomplete-input:focus {
+  border-color: #002070 !important;
+  border-width: 2px !important;
+  box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.06) !important;
+  outline: none !important;
+}
+
+.pri-autocomplete .MuiAutocomplete-input::placeholder {
+  color: #94a3b8 !important;
+  font-weight: 400 !important;
+}
+
+.pri-autocomplete .MuiAutocomplete-input:disabled {
+  background-color: #f8fafc !important;
+  border-color: #e2e8f0 !important;
+  cursor: not-allowed !important;
+}
+
+/* ==============================================
+   ERROR STATE
+   ============================================== */
+
+.pri-autocomplete.error .MuiAutocomplete-input {
+  border-color: #ef4444 !important;
+  background-color: #fef2f2 !important;
+}
+
+.pri-autocomplete.error .MuiAutocomplete-input:hover {
+  border-color: #ef4444 !important;
+}
+
+.pri-autocomplete.error .MuiAutocomplete-input:focus {
+  border-color: #ef4444 !important;
+  box-shadow: 0 0 0 4px rgba(239, 68, 68, 0.08) !important;
+}
+
+/* ==============================================
+   TEXTFIELD
+   ============================================== */
+
+.pri-autocomplete-textfield {
+  width: 100% !important;
+}
+
+.pri-autocomplete-textfield .MuiInputBase-root {
+  padding: 0 !important;
+  background-color: transparent !important;
+}
+
+.pri-autocomplete-textfield .MuiOutlinedInput-notchedOutline {
+  border: none !important;
+}
+
+.pri-autocomplete-textfield .MuiFormHelperText-root {
+  margin-left: 4px !important;
+  margin-top: 6px !important;
+  font-size: 0.75rem !important;
+  color: #64748b !important;
+  font-family: 'Inter', 'Plus Jakarta Sans', sans-serif !important;
+}
+
+.pri-autocomplete-textfield .MuiFormHelperText-root.Mui-error {
+  color: #ef4444 !important;
+}
+
+/* ==============================================
+   CUSTOM ADORNMENTS (Arrow, Loading, Clear)
+   ============================================== */
+
+/* Arrow */
+.pri-autocomplete-arrow-adornment {
+  position: absolute !important;
+  right: 8px !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  pointer-events: none !important;
+}
+
+.pri-autocomplete-arrow-icon {
+  color: #64748b !important;
+  font-size: 24px !important;
+  transition: transform 0.2s ease !important;
+}
+
+.pri-autocomplete-arrow-icon.open {
+  transform: rotate(180deg) !important;
+}
+
+/* Loading */
+.pri-autocomplete-loading-adornment {
+  position: absolute !important;
+  right: 40px !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.pri-autocomplete-spinner {
+  color: #4F46E5 !important;
+}
+
+/* Clear Button */
+.pri-autocomplete-clear-adornment {
+  position: absolute !important;
+  right: 40px !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.pri-autocomplete-clear-btn {
+  padding: 2px !important;
+  color: #94a3b8 !important;
+}
+
+.pri-autocomplete-clear-btn:hover {
+  color: #ef4444 !important;
+  background-color: rgba(239, 68, 68, 0.08) !important;
+  border-radius: 50% !important;
+}
+
+/* ==============================================
+   POPPER / DROPDOWN
+   ============================================== */
+
+.pri-autocomplete-paper {
+  max-height: 280px !important;
+  overflow: auto !important;
+  border-radius: 12px !important;
+}
+
+.pri-autocomplete-paper::-webkit-scrollbar {
+  width: 4px !important;
+}
+
+.pri-autocomplete-paper::-webkit-scrollbar-thumb {
+  background: #e2e8f0 !important;
+  border-radius: 4px !important;
+}
+
+.pri-autocomplete-paper::-webkit-scrollbar-track {
+  background: transparent !important;
+}
+
+/* ==============================================
+   OPTION ITEMS
+   ============================================== */
+
+.pri-autocomplete-option {
+  padding: 6px 10px !important;
+}
+
+.pri-autocomplete-option-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+
+.pri-autocomplete-option-icon-wrapper {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f4ff ;
+  color: #002070;
+  flex-shrink: 0;
+  font-size: 16px;
+}
+
+.pri-autocomplete-option-text-wrapper {
+  flex: 1;
+  min-width: 0;
+}
+
+.pri-autocomplete-option-label-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.pri-autocomplete-option-label {
+  font-weight: 500;
+  color: #1e293b;
+  font-size: 0.875rem;
+}
+
+.pri-autocomplete-option-label.selected {
+  font-weight: 600;
+  color: #002070;
+}
+
+.pri-autocomplete-option-badge {
+  padding: 0 10px;
+  height: 20px;
+  font-size: 0.6rem;
+  background-color: #f1f5f9;
+  color: #64748b;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+
+.pri-autocomplete-option-check {
+  margin-left: auto;
+  color: #211f46;
+  font-size: 16px;
+}
+
+.pri-autocomplete-option-subtext {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.7rem;
+  color: #64748b;
+}
+
+/* ==============================================
+   RESPONSIVE
+   ============================================== */
+
+@media (max-width: 768px) {
+  .pri-autocomplete .MuiAutocomplete-input {
+    font-size: 14px !important;
+  }
+
+  .pri-autocomplete-medium .MuiAutocomplete-input {
+    min-height: 40px !important;
+    padding: 6px 90px 6px 12px !important;
+  }
+  
+  .pri-autocomplete-arrow-adornment {
+    right: 6px !important;
+  }
+  
+  .pri-autocomplete-clear-adornment {
+    right: 36px !important;
+  }
+  
+  .pri-autocomplete-loading-adornment {
+    right: 36px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .pri-autocomplete .MuiAutocomplete-input {
+    font-size: 13px !important;
+  }
+
+  .pri-autocomplete-option-content {
+    gap: 8px !important;
+  }
+
+  .pri-autocomplete-option-icon-wrapper {
+    width: 28px !important;
+    height: 28px !important;
+    font-size: 14px !important;
+  }
+
+  .pri-autocomplete-option-label {
+    font-size: 0.8rem !important;
+  }
+}
